@@ -68,17 +68,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/custom-name/ceshi.html</loc>
-    
-    <lastmod>2023-06-07T07:44:21.936Z</lastmod>
-    
-    <date>1686060431000</date>
-    <title>GitHub Pages + Hexo搭建个人博客网站 | 青椒</title>
-    
-    <desc>GitHub是一个非常好用的用来存放代码或图片的仓库，搭配Hexo使用可以在 GitHub Pages 上搭建个人博客。</desc>
-  </url>
-  
-  <url>
     <loc>http://example.com/categories/ceshi.html</loc>
     
     <lastmod>2023-06-07T07:44:21.936Z</lastmod>
@@ -91,6 +80,17 @@
   
   <url>
     <loc>http://example.com/tags/ceshi.html</loc>
+    
+    <lastmod>2023-06-07T07:44:21.936Z</lastmod>
+    
+    <date>1686060431000</date>
+    <title>GitHub Pages + Hexo搭建个人博客网站 | 青椒</title>
+    
+    <desc>GitHub是一个非常好用的用来存放代码或图片的仓库，搭配Hexo使用可以在 GitHub Pages 上搭建个人博客。</desc>
+  </url>
+  
+  <url>
+    <loc>http://example.com/custom-name/ceshi.html</loc>
     
     <lastmod>2023-06-07T07:44:21.936Z</lastmod>
     
