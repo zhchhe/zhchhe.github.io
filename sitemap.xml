@@ -57,11 +57,11 @@
   </url>
   
   <url>
-    <loc>http://example.com/2023/06/04/hello-world/</loc>
+    <loc>http://example.com/2023/06/11/hello-world/</loc>
     
     <lastmod>2023-06-07T07:53:11.021Z</lastmod>
     
-    <date>1685888116644</date>
+    <date>1686488669966</date>
     <title>Hello World | 青椒</title>
     
     <desc>Welcome to Hexo！ 这是您的第一篇文章。 查看 文档 了解更多信息。 如果你在使用 Hexo 的过程中遇到任何问题，你可以在 疑难解答 中找到答案，也可以在 GitHub 上问我。</desc>
@@ -79,7 +79,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/custom-name/ceshi.html</loc>
+    <loc>http://example.com/categories/ceshi.html</loc>
     
     <lastmod>2023-06-07T07:44:21.936Z</lastmod>
     
@@ -90,7 +90,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/ceshi.html</loc>
+    <loc>http://example.com/custom-name/ceshi.html</loc>
     
     <lastmod>2023-06-07T07:44:21.936Z</lastmod>
     
