@@ -1,124 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/06/04/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>！ 这是您的第一篇文章。
-查看 <a href="https://hexo.io/docs/">文档</a> 了解更多信息。
-如果你在使用 Hexo 的过程中遇到任何问题，你可以在 <a
-href="https://hexo.io/docs/troubleshooting.html">疑难解答</a>
-中找到答案，也可以在 <a
-href="https://github.com/hexojs/hexo/issues">GitHub</a> 上问我。
-<span id="more"></span> ## 快速开始</p>
-<h3 id="创建一个新帖子">创建一个新帖子</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>更多信息: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="运行服务器">运行服务器</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>更多信息: <a href="https://hexo.io/docs/server.html">server</a></p>
-<h3 id="生成网站静态文件">生成网站静态文件</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>更多信息: <a
-href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="部署到远程站点">部署到远程站点</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>更多信息: <a
-href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>NexT主题更改字体</title>
-    <url>/2023/06/08/NexT%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%94%B9%E5%AD%97%E4%BD%93/</url>
-    <content><![CDATA[<p>可能 NexT
-默认的字体你想更改一下，我这里应用了一款开源中文字体，霞鹜文楷。文件包括web使用教程可在GitHub上找到，一起来看看我是如何应用这款字体到我的网站上的吧。
-<span id="more"></span></p>
-<blockquote>
-<p>所用字体：<a
-href="https://github.com/lxgw/LxgwWenKai">一款开源中文字体，霞鹜文楷</a>
-教程参考：<a
-href="https://github.com/chawyehsu/lxgw-wenkai-webfont">LXGW-霞鹜文楷-网络字体</a></p>
-</blockquote>
-<h2 id="使用-npm-安装hexo的霞鹜文楷字体插件">使用 npm
-安装hexo的霞鹜文楷字体插件</h2>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install --save lxgw-wenkai-webfont</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">or Lite version</span></span><br><span class="line">npm install --save lxgw-wenkai-lite-webfont</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">or TC version</span></span><br><span class="line">npm install --save lxgw-wenkai-tc-webfont</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">or Screen version</span></span><br><span class="line">npm install --save lxgw-wenkai-screen-webfont</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>如果出现npm卡住则需要更换npm源，请看我的另一篇文章 <a
-href="https://zhchhe.github.io/2023/06/08/%E8%A7%A3%E5%86%B3npm%E7%BB%8F%E5%B8%B8%E4%B8%8B%E8%BD%BD%E8%BF%87%E6%85%A2%E7%94%9A%E8%87%B3%E5%8D%A1%E4%BD%8F%E4%B8%8D%E5%8A%A8%E7%9A%84%E9%97%AE%E9%A2%98">解决npm经常下载过慢甚至卡住不动的问题</a></p>
-</blockquote>
-<p>安装成功后 hexo 的插件文件夹 <code>Blog\node_modules\</code>
-中会多出来 霞鹜文楷的文件夹。</p>
-<h2 id="在-next-的备用配置中-theme_config-的里面添加如下代码">在 next
-的备用配置中 <code>theme_config:</code> 的里面添加如下代码：</h2>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"> <span class="attr">font:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">host:</span>              <span class="comment"># host留空就行</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">global:</span></span><br><span class="line">      <span class="attr">external:</span> <span class="literal">true</span></span><br><span class="line">      <span class="attr">family:</span> <span class="string">LXGW</span> <span class="string">WenKai</span></span><br><span class="line">      <span class="attr">size:</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">title:</span></span><br><span class="line">      <span class="attr">external:</span> <span class="literal">true</span></span><br><span class="line">      <span class="attr">family:</span> <span class="string">LXGW</span> <span class="string">WenKai</span></span><br><span class="line">      <span class="attr">size:</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">headings:</span></span><br><span class="line">      <span class="attr">external:</span> <span class="literal">true</span></span><br><span class="line">      <span class="attr">family:</span> <span class="string">LXGW</span> <span class="string">WenKai</span></span><br><span class="line">      <span class="attr">size:</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">posts:</span></span><br><span class="line">      <span class="attr">external:</span> <span class="literal">true</span></span><br><span class="line">      <span class="attr">family:</span> <span class="string">LXGW</span> <span class="string">WenKai</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">codes:</span></span><br><span class="line">      <span class="attr">external:</span> <span class="literal">true</span></span><br><span class="line">      <span class="attr">family:</span> <span class="string">LXGW</span> <span class="string">WenKai</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>切记要多缩进一次！我用的是官网的第二种备用配置的方法。</p>
-</blockquote>
-<figure>
-<img
-src="https://github.com/zhchhe/image-bed/raw/1086e15896a795d9a4917fa9548aeeb0fe71554e/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/Snipaste_2023-06-08_01-17-53.png"
-alt="next的第二种备用配置的方法" />
-<figcaption aria-hidden="true">next的第二种备用配置的方法</figcaption>
-</figure>
-<blockquote>
-<p>有关这个备用配置的详细信息请看官网 <a
-href="https://theme-next.js.org/docs/getting-started/configuration.html#theme-config">NexT
-— 配置 | 备用主题</a></p>
-</blockquote>
-<h2
-id="将-style.css-导入到您的主-css-样式文件码">将 <code>style.css</code> 导入到您的主
-css 样式文件码</h2>
-<p>css主文件路径为：<code>Blog\themes\next\source\css\main.styl</code></p>
-<p>复制如下代码到 <code>main.styl</code></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// lxgw-wenkai-webfont</span><br><span class="line">// --------------------------------------------------</span><br><span class="line"><span class="keyword">@import</span> <span class="string">&#x27;lxgw-wenkai-webfont/style.css&#x27;</span>;</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">&quot;LXGW WenKai&quot;</span>, sans-serif;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* Mono font (optional) */</span></span><br><span class="line">pre,<span class="selector-tag">code</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">&quot;LXGW WenKai Mono&quot;</span>, sans-serif;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="复制安装的-hexo-字体插件到路径-css-路径下">复制安装的 hexo
-字体插件到路径 css 路径下</h2>
-<blockquote>
-<p>提示：如果不做这步，生成网页静态文件时会出现找不到
-<code>'lxgw-wenkai-webfont/style.css'</code>
-这个目录或文件。我不知道什么原因，反正复制过去就没事了。</p>
-</blockquote>
-<p>将 <code>Blog\node_modules\</code>
-目录下的霞鹜文楷字体文件夹全部复制到
-<code>Blog\themes\next\source\css</code> 这个目录下，如图所示：</p>
-<figure>
-<img
-src="https://github.com/zhchhe/image-bed/raw/83cf066e0f3ba4e2d6c571ac94eeb6c7afdb2ced/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/Snipaste_2023-06-08_12-39-09.png"
-alt="复制安装的 hexo 字体插件到路径 css 路径下" />
-<figcaption aria-hidden="true">复制安装的 hexo 字体插件到路径 css
-路径下</figcaption>
-</figure>
-<h2 id="将-jsdelivr-link-放入您的-html-头部">将
-jsDelivr <code>&lt;link&gt;</code> 放入您的 html 头部</h2>
-<p>html头部路径为：<code>Blog\themes\next\layout\_layout.njk</code></p>
-<p>注意：这个代码不能全部复制，<code>&lt;head&gt;</code> 中的要复制到
-<code>&lt;head&gt;</code> 中，就是说
-<code>&lt;link rel="……" href="………………" /&gt;</code> 要加到
-<code>&lt;head&gt;</code> 中，<code>&lt;style&gt;</code> 之间的也要加到
-<code>&lt;head&gt;</code> 中。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css&quot;</span> /&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- Lite version --&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- example of mirror cdn.bootcdn.net--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-webfont/1.6.0/style.min.css&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.6.0/style.min.css&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css&quot;</span> /&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- TC version --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css&quot;</span> /&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- Screen version --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">    <span class="selector-tag">body</span> &#123;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">font-family</span>: <span class="string">&quot;LXGW WenKai&quot;</span>, sans-serif;</span></span><br><span class="line"><span class="language-css">      <span class="comment">/* Lite version */</span></span></span><br><span class="line"><span class="language-css">      <span class="attribute">font-family</span>: <span class="string">&quot;LXGW WenKai Lite&quot;</span>, sans-serif;</span></span><br><span class="line"><span class="language-css">      <span class="comment">/* TC version */</span></span></span><br><span class="line"><span class="language-css">      <span class="attribute">font-family</span>: <span class="string">&quot;LXGW WenKai TC&quot;</span>, sans-serif;</span></span><br><span class="line"><span class="language-css">      <span class="comment">/* Screen version */</span></span></span><br><span class="line"><span class="language-css">      <span class="attribute">font-family</span>: <span class="string">&quot;LXGW WenKai Screen&quot;</span>, sans-serif;</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- blablabla --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="即可全局使用-lxgw-wenkai-字体">即可全局使用 LXGW WenKai
-字体</h2>
-<blockquote>
-<p>如果想要部分是 LXGW WenKai 字体请参考官方文档 <a
-href="https://theme-next.js.org/docs/theme-settings/miscellaneous.html#GitHub-Banner">NexT
-— 配置 |字体定制</a></p>
-</blockquote>
-<h2 id="讲个题外话">讲个题外话</h2>
-<p>我昨晚搞这个搞到半夜一点多，怎么都弄不好，最后困得实在遭不住了，于是将上述的方法一股脑都应用上去，hexo
-clean、hexo g、hexo d
-后发现GitHub文章正文的字体仍没有变化，遂放弃想等今早再试试看行不行。</p>
-<p>谁料今早登上去我的GitHub托管的静态网页一看，字体全部应用成功了，令我百思不得其解。不过既然成功了，那就稀里糊涂做个不太标准的教程看吧。可以供有缘人来参考参考，也可以等日后我再回看的时候有帮助。</p>
-]]></content>
-      <categories>
-        <category>创建博客</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>NexT</tag>
-        <tag>更换主题字体</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>GitHub Pages + Hexo搭建个人博客网站</title>
     <url>/2023/06/06/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<p>GitHub是一个非常好用的用来存放代码或图片的仓库，搭配Hexo使用可以在
@@ -223,10 +105,128 @@ alt="部署完成" />
         <category>创建博客</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>GitHub Pages</tag>
+        <tag>Hexo</tag>
         <tag>个人博客</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>NexT主题更改字体</title>
+    <url>/2023/06/08/NexT%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%94%B9%E5%AD%97%E4%BD%93/</url>
+    <content><![CDATA[<p>可能 NexT
+默认的字体你想更改一下，我这里应用了一款开源中文字体，霞鹜文楷。文件包括web使用教程可在GitHub上找到，一起来看看我是如何应用这款字体到我的网站上的吧。
+<span id="more"></span></p>
+<blockquote>
+<p>所用字体：<a
+href="https://github.com/lxgw/LxgwWenKai">一款开源中文字体，霞鹜文楷</a>
+教程参考：<a
+href="https://github.com/chawyehsu/lxgw-wenkai-webfont">LXGW-霞鹜文楷-网络字体</a></p>
+</blockquote>
+<h2 id="使用-npm-安装hexo的霞鹜文楷字体插件">使用 npm
+安装hexo的霞鹜文楷字体插件</h2>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install --save lxgw-wenkai-webfont</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">or Lite version</span></span><br><span class="line">npm install --save lxgw-wenkai-lite-webfont</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">or TC version</span></span><br><span class="line">npm install --save lxgw-wenkai-tc-webfont</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">or Screen version</span></span><br><span class="line">npm install --save lxgw-wenkai-screen-webfont</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>如果出现npm卡住则需要更换npm源，请看我的另一篇文章 <a
+href="https://zhchhe.github.io/2023/06/08/%E8%A7%A3%E5%86%B3npm%E7%BB%8F%E5%B8%B8%E4%B8%8B%E8%BD%BD%E8%BF%87%E6%85%A2%E7%94%9A%E8%87%B3%E5%8D%A1%E4%BD%8F%E4%B8%8D%E5%8A%A8%E7%9A%84%E9%97%AE%E9%A2%98">解决npm经常下载过慢甚至卡住不动的问题</a></p>
+</blockquote>
+<p>安装成功后 hexo 的插件文件夹 <code>Blog\node_modules\</code>
+中会多出来 霞鹜文楷的文件夹。</p>
+<h2 id="在-next-的备用配置中-theme_config-的里面添加如下代码">在 next
+的备用配置中 <code>theme_config:</code> 的里面添加如下代码：</h2>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"> <span class="attr">font:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">host:</span>              <span class="comment"># host留空就行</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">global:</span></span><br><span class="line">      <span class="attr">external:</span> <span class="literal">true</span></span><br><span class="line">      <span class="attr">family:</span> <span class="string">LXGW</span> <span class="string">WenKai</span></span><br><span class="line">      <span class="attr">size:</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">title:</span></span><br><span class="line">      <span class="attr">external:</span> <span class="literal">true</span></span><br><span class="line">      <span class="attr">family:</span> <span class="string">LXGW</span> <span class="string">WenKai</span></span><br><span class="line">      <span class="attr">size:</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">headings:</span></span><br><span class="line">      <span class="attr">external:</span> <span class="literal">true</span></span><br><span class="line">      <span class="attr">family:</span> <span class="string">LXGW</span> <span class="string">WenKai</span></span><br><span class="line">      <span class="attr">size:</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">posts:</span></span><br><span class="line">      <span class="attr">external:</span> <span class="literal">true</span></span><br><span class="line">      <span class="attr">family:</span> <span class="string">LXGW</span> <span class="string">WenKai</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">codes:</span></span><br><span class="line">      <span class="attr">external:</span> <span class="literal">true</span></span><br><span class="line">      <span class="attr">family:</span> <span class="string">LXGW</span> <span class="string">WenKai</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>切记要多缩进一次！我用的是官网的第二种备用配置的方法。</p>
+</blockquote>
+<figure>
+<img
+src="https://github.com/zhchhe/image-bed/raw/1086e15896a795d9a4917fa9548aeeb0fe71554e/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/Snipaste_2023-06-08_01-17-53.png"
+alt="next的第二种备用配置的方法" />
+<figcaption aria-hidden="true">next的第二种备用配置的方法</figcaption>
+</figure>
+<blockquote>
+<p>有关这个备用配置的详细信息请看官网 <a
+href="https://theme-next.js.org/docs/getting-started/configuration.html#theme-config">NexT
+— 配置 | 备用主题</a></p>
+</blockquote>
+<h2
+id="将-style.css-导入到您的主-css-样式文件码">将 <code>style.css</code> 导入到您的主
+css 样式文件码</h2>
+<p>css主文件路径为：<code>Blog\themes\next\source\css\main.styl</code></p>
+<p>复制如下代码到 <code>main.styl</code></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// lxgw-wenkai-webfont</span><br><span class="line">// --------------------------------------------------</span><br><span class="line"><span class="keyword">@import</span> <span class="string">&#x27;lxgw-wenkai-webfont/style.css&#x27;</span>;</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">&quot;LXGW WenKai&quot;</span>, sans-serif;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* Mono font (optional) */</span></span><br><span class="line">pre,<span class="selector-tag">code</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">&quot;LXGW WenKai Mono&quot;</span>, sans-serif;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="复制安装的-hexo-字体插件到路径-css-路径下">复制安装的 hexo
+字体插件到路径 css 路径下</h2>
+<blockquote>
+<p>提示：如果不做这步，生成网页静态文件时会出现找不到
+<code>'lxgw-wenkai-webfont/style.css'</code>
+这个目录或文件。我不知道什么原因，反正复制过去就没事了。</p>
+</blockquote>
+<p>将 <code>Blog\node_modules\</code>
+目录下的霞鹜文楷字体文件夹全部复制到
+<code>Blog\themes\next\source\css</code> 这个目录下，如图所示：</p>
+<figure>
+<img
+src="https://github.com/zhchhe/image-bed/raw/83cf066e0f3ba4e2d6c571ac94eeb6c7afdb2ced/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/Snipaste_2023-06-08_12-39-09.png"
+alt="复制安装的 hexo 字体插件到路径 css 路径下" />
+<figcaption aria-hidden="true">复制安装的 hexo 字体插件到路径 css
+路径下</figcaption>
+</figure>
+<h2 id="将-jsdelivr-link-放入您的-html-头部">将
+jsDelivr <code>&lt;link&gt;</code> 放入您的 html 头部</h2>
+<p>html头部路径为：<code>Blog\themes\next\layout\_layout.njk</code></p>
+<p>注意：这个代码不能全部复制，<code>&lt;head&gt;</code> 中的要复制到
+<code>&lt;head&gt;</code> 中，就是说
+<code>&lt;link rel="……" href="………………" /&gt;</code> 要加到
+<code>&lt;head&gt;</code> 中，<code>&lt;style&gt;</code> 之间的也要加到
+<code>&lt;head&gt;</code> 中。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css&quot;</span> /&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- Lite version --&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- example of mirror cdn.bootcdn.net--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-webfont/1.6.0/style.min.css&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.6.0/style.min.css&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css&quot;</span> /&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- TC version --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css&quot;</span> /&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- Screen version --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">    <span class="selector-tag">body</span> &#123;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">font-family</span>: <span class="string">&quot;LXGW WenKai&quot;</span>, sans-serif;</span></span><br><span class="line"><span class="language-css">      <span class="comment">/* Lite version */</span></span></span><br><span class="line"><span class="language-css">      <span class="attribute">font-family</span>: <span class="string">&quot;LXGW WenKai Lite&quot;</span>, sans-serif;</span></span><br><span class="line"><span class="language-css">      <span class="comment">/* TC version */</span></span></span><br><span class="line"><span class="language-css">      <span class="attribute">font-family</span>: <span class="string">&quot;LXGW WenKai TC&quot;</span>, sans-serif;</span></span><br><span class="line"><span class="language-css">      <span class="comment">/* Screen version */</span></span></span><br><span class="line"><span class="language-css">      <span class="attribute">font-family</span>: <span class="string">&quot;LXGW WenKai Screen&quot;</span>, sans-serif;</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- blablabla --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="即可全局使用-lxgw-wenkai-字体">即可全局使用 LXGW WenKai
+字体</h2>
+<blockquote>
+<p>如果想要部分是 LXGW WenKai 字体请参考官方文档 <a
+href="https://theme-next.js.org/docs/theme-settings/miscellaneous.html#GitHub-Banner">NexT
+— 配置 |字体定制</a></p>
+</blockquote>
+<h2 id="讲个题外话">讲个题外话</h2>
+<p>我昨晚搞这个搞到半夜一点多，怎么都弄不好，最后困得实在遭不住了，于是将上述的方法一股脑都应用上去，hexo
+clean、hexo g、hexo d
+后发现GitHub文章正文的字体仍没有变化，遂放弃想等今早再试试看行不行。</p>
+<p>谁料今早登上去我的GitHub托管的静态网页一看，字体全部应用成功了，令我百思不得其解。不过既然成功了，那就稀里糊涂做个不太标准的教程看吧。可以供有缘人来参考参考，也可以等日后我再回看的时候有帮助。</p>
+]]></content>
+      <categories>
+        <category>创建博客</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+        <tag>更换主题字体</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/06/04/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>！ 这是您的第一篇文章。
+查看 <a href="https://hexo.io/docs/">文档</a> 了解更多信息。
+如果你在使用 Hexo 的过程中遇到任何问题，你可以在 <a
+href="https://hexo.io/docs/troubleshooting.html">疑难解答</a>
+中找到答案，也可以在 <a
+href="https://github.com/hexojs/hexo/issues">GitHub</a> 上问我。
+<span id="more"></span> ## 快速开始</p>
+<h3 id="创建一个新帖子">创建一个新帖子</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>更多信息: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="运行服务器">运行服务器</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>更多信息: <a href="https://hexo.io/docs/server.html">server</a></p>
+<h3 id="生成网站静态文件">生成网站静态文件</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>更多信息: <a
+href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="部署到远程站点">部署到远程站点</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>更多信息: <a
+href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
   </entry>
   <entry>
     <title>显示 Git 状态信息的 power shell 插件</title>
@@ -472,8 +472,8 @@ alt="部署完成" />
 ]]></content>
   </entry>
   <entry>
-    <title>tags</title>
-    <url>/tags/index.html</url>
+    <title>custom-name</title>
+    <url>/custom-name/index.html</url>
     <content><![CDATA[
 ]]></content>
   </entry>
@@ -580,12 +580,6 @@ alt="部署完成" />
 ]]></content>
   </entry>
   <entry>
-    <title>custom-name</title>
-    <url>/custom-name/index.html</url>
-    <content><![CDATA[
-]]></content>
-  </entry>
-  <entry>
     <title>GitHub Pages + Hexo搭建个人博客网站</title>
     <url>/tags/ceshi.html</url>
     <content><![CDATA[<p>GitHub是一个非常好用的用来存放代码或图片的仓库，搭配Hexo使用可以在
@@ -685,6 +679,12 @@ alt="部署完成" />
 </figure>
 <p>这时候再打开 <code>https://xxx.github.io</code>
 这个网页就会显示正常了。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>tags</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[
 ]]></content>
   </entry>
 </search>
