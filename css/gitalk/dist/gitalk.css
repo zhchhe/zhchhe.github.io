@@ -1146,7 +1146,6 @@
   .gt-container .gt-comment-content {
     margin-left: 0.875em;
     padding: 0.625em 0.75em;
-    color: #555555;
   }
 }
 .gt-container .gt-comment-header {
@@ -1214,11 +1213,11 @@
   color: #444d56;
   text-decoration: none;
   vertical-align: middle;
-  background: #282828;
+  background: #dfe2e5;
   border-radius: 1px;
 }
 .gt-container .gt-comment-body .email-hidden-toggle a:hover {
-  background-color: #282828;
+  background-color: #c6cbd1;
 }
 .gt-container .gt-comment-body .email-hidden-reply {
   display: none;
@@ -1234,7 +1233,7 @@
   display: block;
 }
 .gt-container .gt-comment-admin .gt-comment-content {
-  background-color: #555555;
+  background-color: #282828 !important;
 }
 @-webkit-keyframes gt-kf-rotate {
   0% {
