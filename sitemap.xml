@@ -4,7 +4,7 @@
   <url>
     <loc>http://example.com/2023/06/12/%E6%9B%B4%E6%94%B9%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F-Gitalk-%E6%A0%B7%E5%BC%8F/</loc>
     
-    <lastmod>2023-06-12T07:57:38.815Z</lastmod>
+    <lastmod>2023-06-12T08:36:35.856Z</lastmod>
     
     <date>1686553126000</date>
     <title>更改评论系统 Gitalk 样式 | 青椒</title>
@@ -15,7 +15,7 @@
   <url>
     <loc>http://example.com/2023/06/08/%E4%B8%BA-NexT-%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F-Gitalk/</loc>
     
-    <lastmod>2023-06-12T07:47:58.807Z</lastmod>
+    <lastmod>2023-06-12T08:36:16.305Z</lastmod>
     
     <date>1686221138000</date>
     <title>为 NexT 添加评论系统 Gitalk | 青椒</title>
@@ -26,7 +26,7 @@
   <url>
     <loc>http://example.com/2023/06/08/%E6%98%BE%E7%A4%BAGit-%E7%8A%B6%E6%80%81%E4%BF%A1%E6%81%AF%E7%9A%84-power-shell-%E6%8F%92%E4%BB%B6/</loc>
     
-    <lastmod>2023-06-12T06:42:18.204Z</lastmod>
+    <lastmod>2023-06-12T08:34:34.873Z</lastmod>
     
     <date>1686204476000</date>
     <title>显示 Git 状态信息的 power shell 插件 | 青椒</title>
@@ -37,7 +37,7 @@
   <url>
     <loc>http://example.com/2023/06/08/%E8%A7%A3%E5%86%B3npm%E7%BB%8F%E5%B8%B8%E4%B8%8B%E8%BD%BD%E8%BF%87%E6%85%A2%E7%94%9A%E8%87%B3%E5%8D%A1%E4%BD%8F%E4%B8%8D%E5%8A%A8%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
     
-    <lastmod>2023-06-12T06:37:42.111Z</lastmod>
+    <lastmod>2023-06-12T08:31:27.585Z</lastmod>
     
     <date>1686202022000</date>
     <title>解决npm经常下载过慢甚至卡住不动的问题 | 青椒</title>
@@ -48,7 +48,7 @@
   <url>
     <loc>http://example.com/2023/06/08/NexT%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%94%B9%E5%AD%97%E4%BD%93/</loc>
     
-    <lastmod>2023-06-12T06:33:23.992Z</lastmod>
+    <lastmod>2023-06-12T08:31:06.456Z</lastmod>
     
     <date>1686200133000</date>
     <title>NexT主题更改字体 | 青椒</title>
@@ -57,9 +57,20 @@
   </url>
   
   <url>
+    <loc>http://example.com/2023/06/06/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</loc>
+    
+    <lastmod>2023-06-12T08:29:49.676Z</lastmod>
+    
+    <date>1686060431000</date>
+    <title>GitHub Pages + Hexo搭建个人博客网站 | 青椒</title>
+    
+    <desc>GitHub是一个非常好用的用来存放代码或图片的仓库，搭配Hexo使用可以在 GitHub Pages 上搭建个人博客。</desc>
+  </url>
+  
+  <url>
     <loc>http://example.com/2023/06/04/hello-world/</loc>
     
-    <lastmod>2023-06-12T06:20:45.133Z</lastmod>
+    <lastmod>2023-06-12T08:20:29.850Z</lastmod>
     
     <date>1685887631000</date>
     <title>Hello World | 青椒</title>
@@ -79,7 +90,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2023/06/06/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</loc>
+    <loc>http://example.com/categories/ceshi.html</loc>
     
     <lastmod>2023-06-07T07:44:21.936Z</lastmod>
     
@@ -91,17 +102,6 @@
   
   <url>
     <loc>http://example.com/custom-name/ceshi.html</loc>
-    
-    <lastmod>2023-06-07T07:44:21.936Z</lastmod>
-    
-    <date>1686060431000</date>
-    <title>GitHub Pages + Hexo搭建个人博客网站 | 青椒</title>
-    
-    <desc>GitHub是一个非常好用的用来存放代码或图片的仓库，搭配Hexo使用可以在 GitHub Pages 上搭建个人博客。</desc>
-  </url>
-  
-  <url>
-    <loc>http://example.com/categories/ceshi.html</loc>
     
     <lastmod>2023-06-07T07:44:21.936Z</lastmod>
     
