@@ -217,32 +217,6 @@ clean、hexo g、hexo d
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/06/04/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>！ 这是您的第一篇文章。
-查看 <a href="https://hexo.io/docs/">文档</a> 了解更多信息。
-如果你在使用 Hexo 的过程中遇到任何问题，你可以在 <a
-href="https://hexo.io/docs/troubleshooting.html">疑难解答</a>
-中找到答案，也可以在 <a
-href="https://github.com/hexojs/hexo/issues">GitHub</a> 上问我。
-<span id="more"></span> ## 快速开始</p>
-<h3 id="创建一个新帖子">创建一个新帖子</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>更多信息: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="运行服务器">运行服务器</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<p>更多信息: <a href="https://hexo.io/docs/server.html">server</a></p>
-<h3 id="生成网站静态文件">生成网站静态文件</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
-<p>更多信息: <a
-href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="部署到远程站点">部署到远程站点</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-<p>更多信息: <a
-href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>为 NexT 添加评论系统 Gitalk</title>
     <url>/2023/06/08/%E4%B8%BA-NexT-%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F-Gitalk/</url>
     <content><![CDATA[<p>作为博客作者，我建议你为你的博客添加评论系统。添加评论系统，你可以与读者互动，收集反馈意见。Gitalk是一个简单易用且与你的博客主题兼容的评论系统，它使用GitHub作为后端存储，保证了数据的安全性。此外，Gitalk还支持Markdown语法等功能，你的博客将更具互动性和价值。
@@ -336,6 +310,32 @@ alt="效果如图" />
         <tag>NexT</tag>
         <tag>Gitalk</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/06/04/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>！ 这是您的第一篇文章。
+查看 <a href="https://hexo.io/docs/">文档</a> 了解更多信息。
+如果你在使用 Hexo 的过程中遇到任何问题，你可以在 <a
+href="https://hexo.io/docs/troubleshooting.html">疑难解答</a>
+中找到答案，也可以在 <a
+href="https://github.com/hexojs/hexo/issues">GitHub</a> 上问我。
+<span id="more"></span> ## 快速开始</p>
+<h3 id="创建一个新帖子">创建一个新帖子</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>更多信息: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="运行服务器">运行服务器</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<p>更多信息: <a href="https://hexo.io/docs/server.html">server</a></p>
+<h3 id="生成网站静态文件">生成网站静态文件</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+<p>更多信息: <a
+href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="部署到远程站点">部署到远程站点</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<p>更多信息: <a
+href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
   </entry>
   <entry>
     <title>显示 Git 状态信息的 power shell 插件</title>
@@ -487,29 +487,53 @@ alt="本地css样式应用地址" /></li>
 ，意思就是这里的css样式是按照 <code>/css/main.css</code>
 中的样式设置的。</li>
 </ol>
-<p><img
+<figure>
+<img
 src="https://github.com/zhchhe/image-bed/raw/0003d2e6cdb060e5ea50f9e35ea28eeb749fbcf6/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/Snipaste_2023-06-11_18-16-43.png"
-alt="本地css样式应用地址" /> 2. 来到（1）中的位置，即打开本地上的
+alt="本地css样式应用地址" />
+<figcaption aria-hidden="true">本地css样式应用地址</figcaption>
+</figure>
+<ol start="2" type="1">
+<li>来到（1）中的位置，即打开本地上的
 <code>D:\6-web\Blog\themes\next\source\css\main.styl</code> ，这里面的
 Gitalk 中的 css 样式的地址就是你的那个网页上的元素在 Gitalk
-中所使用样式的文件位置。</p>
+中所使用样式的文件位置。</li>
+</ol>
 <blockquote>
 <p>注意：main.styl
 可以是其他的后缀名，因为我看其他的教程后缀名都会不一样。</p>
 </blockquote>
-<p><img
+<figure>
+<img
 src="https://github.com/zhchhe/image-bed/raw/0003d2e6cdb060e5ea50f9e35ea28eeb749fbcf6/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/Snipaste_2023-06-11_18-20-33.png"
-alt="指向的css文件" /> 3. 来到（2）中的位置，查看这个文件夹中的
-<code>gitalk.css</code> 文件，找到你的那个元素。</p>
-<p><img
+alt="指向的css文件" />
+<figcaption aria-hidden="true">指向的css文件</figcaption>
+</figure>
+<ol start="3" type="1">
+<li>来到（2）中的位置，查看这个文件夹中的 <code>gitalk.css</code>
+文件，找到你的那个元素。</li>
+</ol>
+<figure>
+<img
 src="https://github.com/zhchhe/image-bed/raw/0003d2e6cdb060e5ea50f9e35ea28eeb749fbcf6/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/Snipaste_2023-06-11_18-18-49.png"
-alt="css文件所在位置" /> 4. 在 <code>gitalk.css</code>
-中找到网页中的那个元素，即（1）中的 那一大堆代码，在其后方添加
-<code>!important</code> ，这样就将该元素的这个颜色的优先级提高了。</p>
-<p><img
+alt="css文件所在位置" />
+<figcaption aria-hidden="true">css文件所在位置</figcaption>
+</figure>
+<ol start="4" type="1">
+<li>在 <code>gitalk.css</code> 中找到网页中的那个元素，即（1）中的
+那一大堆代码，在其后方添加 <code>!important</code>
+，这样就将该元素的这个颜色的优先级提高了。</li>
+</ol>
+<figure>
+<img
 src="https://github.com/zhchhe/image-bed/raw/0003d2e6cdb060e5ea50f9e35ea28eeb749fbcf6/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/Snipaste_2023-06-11_18-23-28.png"
-alt="加上提高优先级的代码" /> 5. 至此，更改 Gitalk
-样式的教程结束，如果你有什么不太懂的地方可以在我的评论区告诉我，我将为你解答。</p>
+alt="加上提高优先级的代码" />
+<figcaption aria-hidden="true">加上提高优先级的代码</figcaption>
+</figure>
+<ol start="5" type="1">
+<li>至此，更改 Gitalk
+样式的教程结束，如果你有什么不太懂的地方可以在我的评论区告诉我，我将为你解答。</li>
+</ol>
 <blockquote>
 <p>像我这种不会使用css的，经常性在不同的地方复制好几份文件，具体用的是哪一个从来没关注过。经此“大战”，以后就知道博客中的元素用的最高优先级的样式是哪一个文件了。
 撒花！ 这个 Gitalk
@@ -672,110 +696,8 @@ alt="部署完成" />
 ]]></content>
   </entry>
   <entry>
-    <title>GitHub Pages + Hexo搭建个人博客网站</title>
-    <url>/custom-name/ceshi.html</url>
-    <content><![CDATA[<p>GitHub是一个非常好用的用来存放代码或图片的仓库，搭配Hexo使用可以在
-GitHub Pages 上搭建个人博客。</p>
-<span id="more"></span>
-<h2 id="准备工作">准备工作</h2>
-<ol type="1">
-<li>GitHub 账号</li>
-<li>安装 Git</li>
-<li>安装最新版 Node.js</li>
-</ol>
-<h2 id="创建-github-仓库">创建 GitHub 仓库</h2>
-<ol type="1">
-<li>在 GitHub 上创建一个仓库以上传我们本地的网页。</li>
-<li>仓库名为 <code>&lt;你的 GitHub 用户名&gt;.github.io</code>
-，然后创建此仓库此步一定不能出错，仓库名必须是用户名后面加
-<code>github.io</code> 。</li>
-</ol>
-<h2 id="本地安装hexo并初始化">本地安装Hexo并初始化</h2>
-<p>我们采用Hexo来创建我们的博客网站，Hexo
-是一个基于NodeJS的静态博客网站生成器，使用Hexo不需开发，只要进行一些必要的配置即可生成一个个性化的博客网站，非常方便。
-1. 在本地创建一个文件夹用来建博客网站，在文件夹内 shift+鼠标右键
-在此处打开 <code>Git Bash Here</code> 。 2. 在文件夹中打开的Git
-Bash窗口中，用 <code>npm install -g hexo-cli</code> 指令安装 hexo 博客。
-3. 安装完成后输入 <code>npx hexo init</code> 初始化 hexo 博客。 &gt;
-初始化过程会比较慢，慢慢等就好了。 4.
-再接着执行命令 <code>npx hexo g</code> 进行生成网页。 5.
-这时网页已经部署完成，接着输入命令 <code>hexo s</code> 本地启动即可：
-此时浏览器输入 <a
-href="http://localhost:4000">http://localhost:4000</a> 就可以打开新部署的网页了。
-&gt; Hexo官网也有详尽的教程。<a href="https://hexo.io/zh-cn/docs/">文档
-| Hexo</a></p>
-<blockquote>
-<p>如果你想把整个代码文件夹都交给GitHub托管，而不是只是让GitHub托管网页，那么可以看我官网的另一个教程（本来想自己写教程，第一次部署成功了，第二次怎么也搞不明白了，于是就索性不写了……不是我偷懒……）</p>
-</blockquote>
-<blockquote>
-<p>或者等这个网站部署完以后，再在 GitHub
-上新建一个库专门用来存放网站源代码。</p>
-</blockquote>
-<h2 id="将-hexo-一键部署到-github">将 Hexo 一键部署到 GitHub</h2>
-<ol type="1">
-<li>回到你希望存放博客源代码的博客文件夹中，打开 <code>Git Bash</code>，在
-博客文件夹中安装hexo的 <code>Git</code> 部署插件，输入命令安装：</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<ol start="2" type="1">
-<li>我们去博客文件夹📂下,用编辑器打开文件 <code>_config.yml</code> ,找到 <code>deploy</code> 配置项填入以下内容（一般在最下面）:</li>
-</ol>
-<blockquote>
-<p>这一步的意思是我们使用 <code>hexo-deployer-git</code>
-一键部署要指定的目标仓库和目标分支，指定错的话你在本地生成的网页文件夹就上传不到GitHub库中了。</p>
-</blockquote>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line"><span class="code">	type: git</span></span><br><span class="line"><span class="code">	repository: https://github.com/你的GitHub用户名/你的GitHub用户名.github.io.git  #你的仓库地址</span></span><br><span class="line"><span class="code">	branch: main #绑定的仓库分支</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>提示：可以去 GitHub 仓库中查看默认分支是什么再设置 deploy。</p>
-</blockquote>
-<blockquote>
-<p>注意：这里注意一下语法，每个 <code>冒号：</code> 后面都有一个空格</p>
-</blockquote>
-<p>仓库地址如图：</p>
-<figure>
-<img
-src="https://github.com/zhchhe/image-bed/raw/3e0ac1c410ed2719a53537b2296d13ea5c069e5a/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/Snipaste_2023-06-06_21-58-26.png"
-alt="仓库地址" />
-<figcaption aria-hidden="true">仓库地址</figcaption>
-</figure>
-<ol start="3" type="1">
-<li>然后在博客文件夹下打开 <code>git bash</code>命令行
-分别输入以下三条命令：</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo clean   #清除缓存文件 db.json 和已生成的静态网页文件夹 public</span><br><span class="line">hexo g       #重新生成新修改的网站静态文件到默认设置的 public 文件夹(g是 generate 的缩写)</span><br><span class="line">hexo d       #自动部署网站静态文件夹（public）到设定的仓库(d是 deploy 的缩写)</span><br></pre></td></tr></table></figure>
-<ol start="4" type="1">
-<li>现在为止就能打开 <code>https://xxx.github.io</code>
-这个网址了。</li>
-</ol>
-<p>记住最后这三条命令，后面经常用到，另外还有一个本地网页运行命令 <code>hexo s</code>
-可以在本地  <a href="http://localhost:4000">http://localhost:4000</a>
-临时预览网页的样子（因为网页部署到GitHub也是要花时间的……）</p>
-<ol start="5" type="1">
-<li>重要的一点来了，有的同学会抱怨为什么已经部署了但是
-<code>https://xxx.github.io</code>
-还是显示错误啊，这时候你打开自己的GitHub库，看看库的状态是不是正在部署。</li>
-</ol>
-<figure>
-<img
-src="https://github.com/zhchhe/image-bed/raw/3e0ac1c410ed2719a53537b2296d13ea5c069e5a/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/Snipaste_2023-06-06_21-58-48.png"
-alt="正在部署" />
-<figcaption aria-hidden="true">正在部署</figcaption>
-</figure>
-<p>这里显示黄色点且点开以后在转圈表示网页正在部署，大约一分钟左右再重新刷新此页面，待这里变成绿色的
-√ ，就算是部署完成了。</p>
-<figure>
-<img
-src="https://github.com/zhchhe/image-bed/raw/3e0ac1c410ed2719a53537b2296d13ea5c069e5a/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/Snipaste_2023-06-06_21-59-00.png"
-alt="部署完成" />
-<figcaption aria-hidden="true">部署完成</figcaption>
-</figure>
-<p>这时候再打开 <code>https://xxx.github.io</code>
-这个网页就会显示正常了。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>custom-name</title>
-    <url>/custom-name/index.html</url>
+    <title>tags</title>
+    <url>/tags/index.html</url>
     <content><![CDATA[
 ]]></content>
   </entry>
@@ -882,8 +804,110 @@ alt="部署完成" />
 ]]></content>
   </entry>
   <entry>
-    <title>tags</title>
-    <url>/tags/index.html</url>
+    <title>GitHub Pages + Hexo搭建个人博客网站</title>
+    <url>/custom-name/ceshi.html</url>
+    <content><![CDATA[<p>GitHub是一个非常好用的用来存放代码或图片的仓库，搭配Hexo使用可以在
+GitHub Pages 上搭建个人博客。</p>
+<span id="more"></span>
+<h2 id="准备工作">准备工作</h2>
+<ol type="1">
+<li>GitHub 账号</li>
+<li>安装 Git</li>
+<li>安装最新版 Node.js</li>
+</ol>
+<h2 id="创建-github-仓库">创建 GitHub 仓库</h2>
+<ol type="1">
+<li>在 GitHub 上创建一个仓库以上传我们本地的网页。</li>
+<li>仓库名为 <code>&lt;你的 GitHub 用户名&gt;.github.io</code>
+，然后创建此仓库此步一定不能出错，仓库名必须是用户名后面加
+<code>github.io</code> 。</li>
+</ol>
+<h2 id="本地安装hexo并初始化">本地安装Hexo并初始化</h2>
+<p>我们采用Hexo来创建我们的博客网站，Hexo
+是一个基于NodeJS的静态博客网站生成器，使用Hexo不需开发，只要进行一些必要的配置即可生成一个个性化的博客网站，非常方便。
+1. 在本地创建一个文件夹用来建博客网站，在文件夹内 shift+鼠标右键
+在此处打开 <code>Git Bash Here</code> 。 2. 在文件夹中打开的Git
+Bash窗口中，用 <code>npm install -g hexo-cli</code> 指令安装 hexo 博客。
+3. 安装完成后输入 <code>npx hexo init</code> 初始化 hexo 博客。 &gt;
+初始化过程会比较慢，慢慢等就好了。 4.
+再接着执行命令 <code>npx hexo g</code> 进行生成网页。 5.
+这时网页已经部署完成，接着输入命令 <code>hexo s</code> 本地启动即可：
+此时浏览器输入 <a
+href="http://localhost:4000">http://localhost:4000</a> 就可以打开新部署的网页了。
+&gt; Hexo官网也有详尽的教程。<a href="https://hexo.io/zh-cn/docs/">文档
+| Hexo</a></p>
+<blockquote>
+<p>如果你想把整个代码文件夹都交给GitHub托管，而不是只是让GitHub托管网页，那么可以看我官网的另一个教程（本来想自己写教程，第一次部署成功了，第二次怎么也搞不明白了，于是就索性不写了……不是我偷懒……）</p>
+</blockquote>
+<blockquote>
+<p>或者等这个网站部署完以后，再在 GitHub
+上新建一个库专门用来存放网站源代码。</p>
+</blockquote>
+<h2 id="将-hexo-一键部署到-github">将 Hexo 一键部署到 GitHub</h2>
+<ol type="1">
+<li>回到你希望存放博客源代码的博客文件夹中，打开 <code>Git Bash</code>，在
+博客文件夹中安装hexo的 <code>Git</code> 部署插件，输入命令安装：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<ol start="2" type="1">
+<li>我们去博客文件夹📂下,用编辑器打开文件 <code>_config.yml</code> ,找到 <code>deploy</code> 配置项填入以下内容（一般在最下面）:</li>
+</ol>
+<blockquote>
+<p>这一步的意思是我们使用 <code>hexo-deployer-git</code>
+一键部署要指定的目标仓库和目标分支，指定错的话你在本地生成的网页文件夹就上传不到GitHub库中了。</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line"><span class="code">	type: git</span></span><br><span class="line"><span class="code">	repository: https://github.com/你的GitHub用户名/你的GitHub用户名.github.io.git  #你的仓库地址</span></span><br><span class="line"><span class="code">	branch: main #绑定的仓库分支</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>提示：可以去 GitHub 仓库中查看默认分支是什么再设置 deploy。</p>
+</blockquote>
+<blockquote>
+<p>注意：这里注意一下语法，每个 <code>冒号：</code> 后面都有一个空格</p>
+</blockquote>
+<p>仓库地址如图：</p>
+<figure>
+<img
+src="https://github.com/zhchhe/image-bed/raw/3e0ac1c410ed2719a53537b2296d13ea5c069e5a/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/Snipaste_2023-06-06_21-58-26.png"
+alt="仓库地址" />
+<figcaption aria-hidden="true">仓库地址</figcaption>
+</figure>
+<ol start="3" type="1">
+<li>然后在博客文件夹下打开 <code>git bash</code>命令行
+分别输入以下三条命令：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo clean   #清除缓存文件 db.json 和已生成的静态网页文件夹 public</span><br><span class="line">hexo g       #重新生成新修改的网站静态文件到默认设置的 public 文件夹(g是 generate 的缩写)</span><br><span class="line">hexo d       #自动部署网站静态文件夹（public）到设定的仓库(d是 deploy 的缩写)</span><br></pre></td></tr></table></figure>
+<ol start="4" type="1">
+<li>现在为止就能打开 <code>https://xxx.github.io</code>
+这个网址了。</li>
+</ol>
+<p>记住最后这三条命令，后面经常用到，另外还有一个本地网页运行命令 <code>hexo s</code>
+可以在本地  <a href="http://localhost:4000">http://localhost:4000</a>
+临时预览网页的样子（因为网页部署到GitHub也是要花时间的……）</p>
+<ol start="5" type="1">
+<li>重要的一点来了，有的同学会抱怨为什么已经部署了但是
+<code>https://xxx.github.io</code>
+还是显示错误啊，这时候你打开自己的GitHub库，看看库的状态是不是正在部署。</li>
+</ol>
+<figure>
+<img
+src="https://github.com/zhchhe/image-bed/raw/3e0ac1c410ed2719a53537b2296d13ea5c069e5a/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/Snipaste_2023-06-06_21-58-48.png"
+alt="正在部署" />
+<figcaption aria-hidden="true">正在部署</figcaption>
+</figure>
+<p>这里显示黄色点且点开以后在转圈表示网页正在部署，大约一分钟左右再重新刷新此页面，待这里变成绿色的
+√ ，就算是部署完成了。</p>
+<figure>
+<img
+src="https://github.com/zhchhe/image-bed/raw/3e0ac1c410ed2719a53537b2296d13ea5c069e5a/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/Snipaste_2023-06-06_21-59-00.png"
+alt="部署完成" />
+<figcaption aria-hidden="true">部署完成</figcaption>
+</figure>
+<p>这时候再打开 <code>https://xxx.github.io</code>
+这个网页就会显示正常了。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>custom-name</title>
+    <url>/custom-name/index.html</url>
     <content><![CDATA[
 ]]></content>
   </entry>
