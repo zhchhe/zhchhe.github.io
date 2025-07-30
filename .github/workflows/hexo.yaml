@@ -1,0 +1,64 @@
+# 自动部署 Hexo 博客到 GitHub Pages 的 GitHub Actions 工作流
+# 将此文件保存为：.github/workflows/hexo.yaml
+
+name: Deploy Hexo site to Pages  # 工作流程名称
+
+on:
+  push:
+    branches: [main]  # 监听哪个分支的 push 操作，建议改为你实际开发用的分支名，如 master 或 main
+  workflow_dispatch:  # 允许你手动在 GitHub 页面上触发该流程
+
+permissions:
+  contents: read          # 读取仓库内容的权限
+  pages: write            # 写入 GitHub Pages 的权限（部署用）
+  id-token: write         # 授权访问 Pages 的身份令牌权限
+
+concurrency:
+  group: "pages"          # 防止多个部署流程冲突，设置并发组名
+  cancel-in-progress: false  # 是否取消正在进行的旧部署流程
+
+defaults:
+  run:
+    shell: bash  # 所有命令使用 bash 执行
+
+jobs:
+  build:  # 第一个任务：构建 Hexo 博客
+    runs-on: ubuntu-latest  # 使用最新版 Ubuntu 环境运行
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3  # 拉取你的仓库代码
+        with:
+          submodules: recursive  # 如果你使用了 NexT 主题作为子模块，必须开启这个选项
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v3  # 配置 GitHub Pages 相关信息
+
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3  # 设置 Node.js 运行环境
+        with:
+          node-version: "18"  # 指定使用 Node.js 18（与 Hexo 兼容）
+
+      - name: Install Dependencies
+        run: npm install  # 安装 package.json 中的依赖（包括 Hexo 及插件）
+
+      - name: Build with Hexo
+        run: npx hexo generate  # 生成静态网页文件（生成到 public 目录）
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1  # 上传生成好的 public 文件夹内容
+        with:
+          path: ./public  # 指定上传路径为 Hexo 的输出目录
+
+  deploy:  # 第二个任务：部署生成好的博客到 GitHub Pages
+    environment:
+      name: github-pages  # 指定部署环境名（用于在 GitHub 页面中标识）
+      url: ${{ steps.deployment.outputs.page_url }}  # 获取部署成功后的访问链接
+    runs-on: ubuntu-latest
+    needs: build  # 表示必须等 build 完成后才能执行 deploy
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2  # 使用官方的部署插件完成部署
